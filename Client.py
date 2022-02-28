@@ -31,7 +31,7 @@ public_key = RSA.importKey(public_pem)
 
 
 client = socket(AF_INET, SOCK_STREAM)
-client.connect(('192.168.3.25',50000))
+client.connect(('192.168.0.37',50000))
 a='connected'
 client.send(a.encode())
 serverkey=client.recv(1024)
